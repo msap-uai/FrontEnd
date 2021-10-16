@@ -1,0 +1,49 @@
+/*centrar texto*/
+.parrafo {
+    text-align: center;
+    margin-top: 20px;
+}
+.titulo {
+    text-align: center;
+    margin-top: -15px;
+}
+/*tamaño row*/
+.row{
+    padding-left: 13%;
+    padding-right: 13%;
+}
+/*botones*/
+.btn-javascript {
+    background-color: rgb(255, 205, 42);
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.btn-react {
+    background-color: rgb(23, 162, 183);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 5px;   
+}
+.btn-negocios {
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 5px;  
+}
+
+.btn-startups {
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 5px;  
+}

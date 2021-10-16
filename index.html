@@ -4,47 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     
-    <title>Integrador</title>
+    <title>TP Codo a Codo</title>
 </head>
   <body>
-
-    <nav class="navbar navbar-expand-lg">
+    <!--Barra navegacion-->
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(53,58,64);">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./img/codoacodo.png" alt="" width="100" height="54">
+          <a class="navbar-brand " href="#" style="font-size: xx-large">
+            <img src="./img/codoacodo.png" alt="" width="150" height="90" class="d-inline-block align-center" alt=""  >
             Conf Bs As
           </a>
-          <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
           <div class="collapse navbar-collapse justify-content-end" id="navbarText">
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#la-conferencia">La conferencia</a>
+                <a class="nav-link" aria-current="page" href="">La conferencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#oradores">Los oradores</a>
+                <a class="nav-link" href="">Los oradores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#fecha-lugar">El lugar y la fecha</a>
+                <a class="nav-link" href="">El lugar y la fecha</a>
               <li class="nav-item">
-                <a class="nav-link" href="#formulario">Conviértete en orador</a>
+                <a class="nav-link" href="">Conviértete en orador</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#la-conferencia">Comprar tickets</a>
+                <a class="nav-link active" href="">Comprar tickets</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
 
-    <div class="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" id="la-conferencia">
+
+    <!--Carousel central-->
+    <div class="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
       <div class="carousel-inner">
       
         <div class="carousel-item active">
@@ -58,15 +56,13 @@
               y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento,
               a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
           </p>
-          
             <button class="btn1" href="#" >Quiero ser orador</button>
             <button class="btn2" href="#" >Comprar tickets</button>
-    
         </div>
       </div>
-
     </div>
 
+    <!--ORADORES-->
     <div class="oradores" id="oradores">
       <p class="parrafo">CONOCE A LOS</p>
       <h2 class="titulo">ORADORES</h2>
@@ -110,16 +106,15 @@
       
       </div>
     </div>
-
-    <div class="fecha-lugar" id="fecha-lugar">
+    <!--LUGAR-->
+    <div class="lugar" id="lugar">
     <div class="card-group">
       <div class="card">
         <img src="./img/honolulu.jpg" class="card-img-top" alt="...">
       </div>
-
-      <div class="card bg-dark">
-        <div class="card-body">
-          <h5 class="card-title">Bs As Octubre</h5>
+      <div class="card" >
+        <div class="card-body" style="background-color: rgb(53,58,64)">
+          <h2 class="card-title">Bs As Octubre</h2>
           <p class="card-text">
             Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos.
             Honoulus es la más sureña e entre las principales ciudades estadounidenses. Aunque el nombre de honolulu
@@ -134,10 +129,11 @@
     </div>
     
     <div class="formulario" id="formulario">
-      <p class="parrafo2">CONVIÉRTETE EN UN</p>
-      <h3 class="titulo2">ORADOR</h3>
-      <p class="parrafo3">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
-
+      <p class="parrafo_2">CONVIÉRTETE EN UN</p>
+      <h1 class="titulo_2">ORADOR</h1>
+      <p class="parrafo_3">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+    
+      <!--formulario-->
       <div class="row">
         <div class="col-md-4">
           <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
@@ -149,16 +145,21 @@
 
       <div class="text-form">
         <div class="mb-3 col-md-6">
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Sobre qué quieres hablar?"></textarea>
-          <div id="emailHelp" class="form-text">Recordá incluir un título para tu charla</div>
+          <textarea class="form-control" id="exampleFormControl" rows="4" placeholder="Sobre qué quieres hablar?"></textarea>
+
+          <div id="emailHelp" class="form-text">Recuerda incluir un título para tu charla</div>
         </div>
       </div>
 
-      <div class="d-grid gap-1">
+      <div class="d-grid ">
         <button class="btn-form" type="submit">Enviar</button>
       </div>
     </div>
 
+
+
+
+    <!--FOOTER-->
     <footer class="navbar-footer navbar-expand-lg">
       <div class="container-fluid">
 
